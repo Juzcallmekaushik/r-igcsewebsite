@@ -7,7 +7,7 @@ import {
   RiDiscordFill,
   RiRedditFill,
 } from "@remixicon/react";
-import { motion, AnimatePresence, Variants } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import React, { useState, useEffect } from "react";
 
 const linkStyle: React.CSSProperties = {
@@ -25,10 +25,8 @@ const AnimatedLink = ({
   to,
   children,
   style,
-  isInitiallyUnderlined,
   hoverColor,
   isExternal,
-  showUnderline = true,
   isActive = false,
   className,
   iconType,
